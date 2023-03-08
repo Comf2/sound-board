@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="/production/styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./production/styles/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./production/styles/navbar.css"
+    />
+    <script
+      src="./production/js/main.js"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c503d7f164.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sound Board</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-top-container">
+        <!-- hamburger icon -->
+        <button
+          class="toggle-nav-button button-reset"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <svg
+            stroke="var(--button-color)"
+            fill="none"
+            class="hamburger"
+            viewBox="-10 -10 120 120"
+            width="60"
+          >
+            <path
+              class="line"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+            ></path>
+          </svg>
+        </button>
+        <div class="mobile-search-container">
+          <div class="search-container">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              id="search-icon"
+            ></i>
+            <input
+              type="search"
+              name="search-item"
+              id="search-item"
+              class="main-search"
+              placeholder="Item..."
+            />
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="./index.html">
+            <img
+              src="./production/assets/svg/NookBay.svg"
+              alt="Nook Bay"
+              aria-hidden="true"
+              class="main-logo"
+            />
+          </a>
+        </li>
+        <li onclick="window.location = './production/assets/pages/cart.html'">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <p>Pocket</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-list"></i>
+          <p>Requests</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-plus"></i>
+          <p>Create</p>
+        </li>
+        <li class="desktop-search-container">
+          <div class="search-container">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              id="search-icon"
+            ></i>
+            <input
+              type="search"
+              name="search-item"
+              id="search-item"
+              class="main-search"
+              placeholder="Item..."
+            />
+          </div>
+        </li>
+        <li
+          onclick="window.location='./production/assets/pages/log-in.html'"
+          class="mobile-dropdown-content signed-out-nav-ele"
+        >
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <p>Login</p>
+        </li>
+        <li
+          onclick="window.location='./production/assets/pages/sign-up.html'"
+          class="mobile-dropdown-content signed-out-nav-ele"
+        >
+          <i class="fa-solid fa-check"></i>
+          <p>Sign Up</p>
+        </li>
+        <li class="toggle-light-mode mobile-dropdown-content">
+          <i class="fa-solid fa-sun"></i>
+          <p>Dark Mode</p>
+        </li>
+        <li class="account-container">
+          <i
+            id="account-icon"
+            class="fa-solid fa-user"
+          ></i>
+          <div
+            data-open="false"
+            style="display: none"
+            class="account-dropdown"
+          >
+            <ul>
+              <li
+                class="signed-out-nav-ele"
+                onclick="window.location='./production/assets/pages/log-in.html'"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <p>Login</p>
+              </li>
+              <li
+                class="signed-out-nav-ele"
+                onclick="window.location='./production/assets/pages/sign-up.html'"
+              >
+                <i class="fa-solid fa-check"></i>
+                <p>Sign Up</p>
+              </li>
+              <li class="toggle-light-mode">
+                <i class="fa-solid fa-sun"></i>
+                <p>Dark Mode</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

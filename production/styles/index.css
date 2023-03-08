@@ -1,0 +1,18 @@
+:root {
+	--main-green: #9effb1;
+	--secondary-green: #6bff89;
+	--main-blue: #82f1f7;
+	--secondary-blue: #22e7f1;
+	--main-brown: #c48d40;
+	--secondary-brown: #b47f35;
+	--main-yellow: #fff461;
+	--secondary-yellow: #fae900;
+	--main-bg: #fffffa;
+	--secondary-bg: #ececec;
+	--accent-grey: #696969;
+	--accent-grey-opacity: hsla(0, 0%, 41%, 0.3);
+	--text-dark: #313131;
+	--main-text: #313131;
+	--secondary-text: #696969;
+	--main-transition-timing:cubic-bezier(.19,.39,.59,.7);
+}
