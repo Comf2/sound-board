@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 :root {
-	--main-green: #9effb1;
-	--secondary-green: #6bff89;
-	--main-blue: #82f1f7;
-	--secondary-blue: #22e7f1;
-	--main-brown: #c48d40;
-	--secondary-brown: #b47f35;
-	--main-yellow: #fff461;
-	--secondary-yellow: #fae900;
-	--main-bg: #fffffa;
-	--secondary-bg: #ececec;
-	--accent-grey: #696969;
-	--accent-grey-opacity: hsla(0, 0%, 41%, 0.3);
-	--text-dark: #313131;
-	--main-text: #313131;
-	--secondary-text: #696969;
+	--dark-purple:#11001C;
+	--medium-purple:#290025;
+	--purple:#35012C;
+	--light-purple:#4F0147;
+	--dark-bg:#08010D;
+	--main-text:#E2C2F9;
+	--dark-secondary:#11031B;
+	--secondary-white:#CD87FF;
+
 	--main-transition-timing:cubic-bezier(.19,.39,.59,.7);
+
+}
+body {
+	background-color: var(--dark-bg);
+	width: 100%;
+	min-height: 100vh;
+	color: var(--main-text);
+	font-family: Raleway;
 }

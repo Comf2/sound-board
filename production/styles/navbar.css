@@ -1,13 +1,8 @@
-body {
-	background-color: var(--main-bg);
-	width: 100%;
-	min-height: 100vh;
-	overflow-x: hidden;
-}
 /* nav bar styles */
 .main-logo {
 	width: 8rem;
 	cursor: pointer;
+	margin: none;
 }
 .nav-spacer {
 	height: 3rem;
@@ -17,7 +12,7 @@ body {
 	/* width: 75vw; */
 	width: 0;
 	height: 100vh;
-	background-color: var(--secondary-green);
+	background-color: var(--light-purple);
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -56,7 +51,7 @@ body {
 
 .nav-top-container {
 	width: 100vw;
-	background-color: var(--main-green);
+	background-color: var(--light-purple);
 	display: flex;
 	align-items: center;
 }
@@ -71,6 +66,8 @@ body {
 	opacity: 0;
 	transition: all 0.5s var(--main-transition-timing);
 	display: none;
+	background: linear-gradient(180deg, var(--light-purple) 11%, transparent 100%);
+
 }
 
 .nav-list > * {
@@ -121,11 +118,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--secondary-green);
+	background-color:transparent;
 	width: 100%;
 	gap: 1vmin;
 	border-radius: 10px;
 	padding: 0 0.5rem;
+	border: 2px solid #4F0147;
+	box-shadow: 0px 0px 13px 3px var(--light-purple);
+	border-radius: 1rem;
 }
 .main-search {
 	width: 100%;
@@ -147,7 +147,7 @@ body {
 	width: 2em;
 	aspect-ratio: 1/1;
 	border: none;
-	background-color: var(--main-blue);
+	background-color: var(--dark-secondary);
 	cursor: pointer;
 	display: grid;
 	place-items: center;
@@ -223,7 +223,7 @@ body {
 	}
 	#account-icon {
 		padding: 1rem;
-		background-color: var(--secondary-green);
+		background-color: var(--light-purple);
 		border-radius: 50vw;
 		transition: all var(--main-transition-timing) 0.3s;
 	}
@@ -235,7 +235,7 @@ body {
 	}
 
 	.account-dropdown {
-		background-color: var(--main-bg);
+		background-color: var(--dark-bg);
 		border-radius: 1rem;
 		position: absolute;
 		right: 1.3rem;
