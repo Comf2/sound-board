@@ -28,6 +28,18 @@
       defer
     ></script>
     <script
+      src="./production/js/sound-board.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pyscript.net/latest/pyscript.css"
+    />
+    <script
+      defer
+      src="https://pyscript.net/latest/pyscript.js"
+    ></script>
+    <script
       src="https://kit.fontawesome.com/c503d7f164.js"
       crossorigin="anonymous"
     ></script>
@@ -79,23 +91,23 @@
           <a href="./index.html">
             <img
               src="./production/assets/svg/logo.svg"
-              alt="Nook Bay"
+              alt="Echo Chamber"
               aria-hidden="true"
               class="main-logo"
             />
           </a>
         </li>
-        <li onclick="window.location = './production/assets/pages/cart.html'">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <p>Pocket</p>
+        <li>
+          <i class="fa-solid fa-plus"></i>
+          <p>Post</p>
         </li>
         <li>
           <i class="fa-solid fa-list"></i>
-          <p>Requests</p>
+          <p>Filter</p>
         </li>
         <li>
-          <i class="fa-solid fa-plus"></i>
-          <p>Create</p>
+          <i class="fa-solid fa-star"></i>
+          <p>Review</p>
         </li>
         <li class="desktop-search-container">
           <div class="search-container">
@@ -112,20 +124,6 @@
             />
           </div>
         </li>
-        <li
-          onclick="window.location='./production/assets/pages/log-in.html'"
-          class="mobile-dropdown-content signed-out-nav-ele"
-        >
-          <i class="fa-solid fa-right-to-bracket"></i>
-          <p>Login</p>
-        </li>
-        <li
-          onclick="window.location='./production/assets/pages/sign-up.html'"
-          class="mobile-dropdown-content signed-out-nav-ele"
-        >
-          <i class="fa-solid fa-check"></i>
-          <p>Sign Up</p>
-        </li>
         <li class="toggle-light-mode mobile-dropdown-content">
           <i class="fa-solid fa-sun"></i>
           <p>Dark Mode</p>
@@ -141,20 +139,6 @@
             class="account-dropdown"
           >
             <ul>
-              <li
-                class="signed-out-nav-ele"
-                onclick="window.location='./production/assets/pages/log-in.html'"
-              >
-                <i class="fa-solid fa-right-to-bracket"></i>
-                <p>Login</p>
-              </li>
-              <li
-                class="signed-out-nav-ele"
-                onclick="window.location='./production/assets/pages/sign-up.html'"
-              >
-                <i class="fa-solid fa-check"></i>
-                <p>Sign Up</p>
-              </li>
               <li class="toggle-light-mode">
                 <i class="fa-solid fa-sun"></i>
                 <p>Dark Mode</p>
@@ -164,5 +148,20 @@
         </li>
       </ul>
     </nav>
+    <main>
+      <h1>Echo Chamber</h1>
+      <div class="cards-container">
+        <div class="card">
+          <img
+            src="./production/assets/svg/logo.svg"
+            alt="Add an Image..."
+          />
+          <div class="card-desc">
+            <p>Sound 1</p>
+            <i class="fa-solid fa-play play-sound"></i>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

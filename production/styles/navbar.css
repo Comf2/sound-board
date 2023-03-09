@@ -31,7 +31,8 @@
 	border: none;
 }
 .hamburger {
-	--button-color: var(--text-dark);
+	--button-color: var(--main-text);
+	cursor: pointer;
 	transition: translate 1s, rotate 1s;
 	transition-timing-function: var(--main-transition-timing);
 	overflow: hidden;
@@ -174,7 +175,7 @@
 	}
 }
 /* media query for desktop screens */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
 	.toggle-nav-button {
 		display: none !important;
 	}
@@ -212,7 +213,6 @@
 	}
 	.main-logo {
 		padding: 0.5em;
-		margin-block: 1em;
 		margin-left: auto;
 	}
 	.account-container {
