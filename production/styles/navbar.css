@@ -167,13 +167,7 @@
 	background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* Media Query for tablet */
-@media screen and (min-width:750px){
-	.mobile-search-container{
-		width: 100%;
-		margin: 0 5vmin;
-	}
-}
+
 /* media query for desktop screens */
 @media screen and (min-width: 1001px) {
 	.toggle-nav-button {
