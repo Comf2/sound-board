@@ -34,6 +34,8 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 5vmin;
+	align-items: center;
+	justify-content: center;
 }
 .card {
 	width: min(15rem, 100%);
@@ -65,4 +67,9 @@ h1 {
 }
 .play-sound {
 	cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+	main {
+		font-size: 17px;
+	}
 }
