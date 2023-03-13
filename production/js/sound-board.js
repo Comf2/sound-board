@@ -127,11 +127,15 @@ function soundEnded(e, audioEle) {
 // --- search for audios --- //
 
 const searchInput = document.getElementById('search-sound');
+const searchInputDesktop = document.getElementById('search-sound-desktop');
 searchInput.addEventListener('input', (e) => {
   const search = e.target.value;
   searchSound(search);
 });
-
+searchInputDesktop.addEventListener('input', (e) => {
+  const search = e.target.value;
+  searchSound(search);
+});
 function searchSound(search) {
   if (search && search.trim().length > 0) {
     value = search.toLowerCase();
