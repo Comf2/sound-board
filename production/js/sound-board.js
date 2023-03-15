@@ -59,7 +59,10 @@ function initSoundEffects() {
     sound: new Audio('./production/assets/audio/cave-theme.wav'),
     name: 'Underground Theme',
   };
-
+  const finalHit = {
+    sound: new Audio('./production/assets/audio/final-hit.wav'),
+    name: 'Final Hit',
+  };
   //push the index to the onclick then use the index to make it play
   audios.push(
     running,
@@ -73,7 +76,8 @@ function initSoundEffects() {
     endRoll,
     initRoll,
     mainTheme,
-    caveTheme
+    caveTheme,
+    finalHit
   );
   for (let i = 0; i < audios.length; i++) {
     initCards(audios[i], i);
